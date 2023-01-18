@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListaAutorComponent } from './lista-autor/lista-autor.component';
 import { FormularioAutorComponent } from './formulario-autor/formulario-autor.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -13,7 +14,8 @@ import { FormularioAutorComponent } from './formulario-autor/formulario-autor.co
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ]
 })
 export class AutorModule { }
