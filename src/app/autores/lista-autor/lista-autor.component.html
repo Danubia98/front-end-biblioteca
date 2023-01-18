@@ -1,4 +1,37 @@
-<p>lista-autor works!</p>
-<a routerLink="/autores/formulario">Cadastrar Autor</a>
-<br />
-<a routerLink="/autores/formulario/1">Aterar Autor</a>
+<div class="titulo-cabecalho mt-3 mb-3">
+    <h1>Lista de autores</h1>
+</div>
+<div class="tabela-autores border border-dark mt-5">
+    <table class="table">
+        <thead>
+            <th>Nome</th>
+            <th>Biografia</th>
+            <th>Ações</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Autor 1</td>
+                <td>Biografia 1</td>
+                <td><a routerLink="/autores/formulario/1" class="btn btn-warning">Aterar</a></td>
+            </tr>
+            <tr>
+                <td>Autor 2</td>
+                <td>Biografia 2</td>
+                <td><a routerLink="/autores/formulario/2" class="btn btn-warning">Aterar</a></td>
+            </tr>
+            <tr>
+                <td>Autor 3</td>
+                <td>Biografia 3</td>
+                <td><a routerLink="/autores/formulario/3" class="btn btn-warning">Aterar</a></td>
+            </tr>
+            <tr>
+                <td>Autor 4</td>
+                <td>Biografia 4</td>
+                <td><a routerLink="/autores/formulario/4" class="btn btn-warning">Aterar</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<a routerLink="/autores/formulario" class="btn btn-success mt-3">+ Novo Autor</a>

@@ -1,4 +1,50 @@
-<p>lista-livro works!</p>
-<a routerLink="/livros/formulario">Cadastrar Livro</a>
-<br />
-<a routerLink="/livros/formulario/1">Alterar Livro</a>
+<div class="titulo-cabecalho mt-3 mb-3">
+    <h1>Lista de livros</h1>
+</div>
+<div class="tabela-livros border border-dark mt-5">
+    <table class="table">
+        <thead class="cabecalho-livros">
+            <th>Título</th>
+            <th>Ano Lançamento</th>
+            <th>Autores</th>
+            <th>Ações</th>
+        </thead>
+        <tbody class="corpo-tabela">
+            <tr>
+                <td>Livro 1</td>
+                <td>Ano</td>
+                <td>
+                    <div>Autor 3</div>
+                </td>
+                <td><a routerLink="/livros/formulario/1" class="btn btn-warning">Aterar</a></td>
+            </tr>
+            <tr>
+                <td>Livro 2</td>
+                <td>Ano</td>
+                <td>
+                    <div>Autor 4</div>
+                </td>
+                <td><a routerLink="/livros/formulario/2" class="btn btn-warning">Aterar</a></td>
+            </tr>
+            <tr>
+                <td>Livro 3</td>
+                <td>Ano</td>
+                <td>
+                    <div>Autor 2</div>
+                </td>
+                <td><a routerLink="/autores/formulario/3" class="btn btn-warning">Aterar</a></td>
+            </tr>
+            <tr>
+                <td>Livro 4</td>
+                <td>Ano</td>
+                <td>
+                    <div>Autor 1</div>
+                </td>
+                <td><a routerLink="/livros/formulario/4" class="btn btn-warning">Aterar</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<a routerLink="/livros/formulario" class="btn btn-success mt-3">+ Novo Livro</a>
